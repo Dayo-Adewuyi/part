@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -13,7 +14,9 @@ const Header = () => {
         className="h-10 w-auto"
       />
     </div>
-    <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors">
+    <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors" onClick={
+      () => window.open('https://calendar.app.google/GwGUBawBxUzt76aBA', '_blank')
+    }>
       Talk to us
     </button>
   </header>
